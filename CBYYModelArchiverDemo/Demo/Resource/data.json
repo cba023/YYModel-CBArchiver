@@ -1,0 +1,190 @@
+{
+    "code" : "1",
+    "msg" : "success",
+    "list" : [
+              {
+              "start_station" : "149",
+              "addtime" : "2017\/09\/14 10:15",
+              "end_station" : "154",
+              "id" : "342",
+              "transferdrivertime" : "",
+              "courier" : {
+              "id" : "",
+              "name" : "张飞",
+              "mobile" : "13399999991"
+              },
+              "transferone" : "153",
+              "transferonetime" : "",
+              "start" : {
+              "title" : "中色石桥铺",
+              "mobile" : "13033333333",
+              "sendtime" : "",
+              "address" : "暗点"
+              },
+              "statustypes" : null,
+              "isdeliver" : "0",
+              "end_areaname" : "忠县",
+              "logistics" : "中色货运有限公司",
+              "consignee" : {
+              "name" : "李打铁",
+              "address" : "",
+              "phone" : "18888884444"
+              },
+              "shipper" : {
+              "name" : "刘备",
+              "address" : "中国建设银行",
+              "phone" : "18888889999"
+              },
+              "isexpress" : "0",
+              "finishtime" : "1970\/01\/01 08:00",
+              "transfertwo" : null,
+              "status" : "0",
+              "exptime" : "1970\/01\/01 08:00",
+              "price" : "0.00",
+              "order" : {
+              "remark" : "",
+              "goodsnum" : "4",
+              "paketype" : "普通",
+              "goods" : "文件",
+              "taketime" : "30",
+              "paytype" : "现付"
+              },
+              "deliverychoice" : "1",
+              "start_area" : "1",
+              "transfertwotime" : "",
+              "transferdriver" : "142",
+              "starttime" : "1970\/01\/01 08:00",
+              "start_areaname" : "石桥铺",
+              "pickuptime" : "1970\/01\/01 08:00",
+              "arrivedtime" : "1970\/01\/01 08:00",
+              "end_area" : "17",
+              "shortno" : "6",
+              "orderno" : "0914101606"
+              },
+              {
+              "start_station" : "149",
+              "addtime" : "2017\/09\/14 10:12",
+              "end_station" : "154",
+              "id" : "341",
+              "transferdrivertime" : "",
+              "courier" : {
+              "id" : "72",
+              "name" : "林狗",
+              "mobile" : "13399999992"
+              },
+              "transferone" : "153",
+              "transferonetime" : "",
+              "start" : {
+              "title" : "中色石桥铺",
+              "mobile" : "13033333333",
+              "sendtime" : "",
+              "address" : "暗点"
+              },
+              "statustypes" : null,
+              "isdeliver" : "0",
+              "end_areaname" : "忠县",
+              "logistics" : "中色货运有限公司",
+              "consignee" : {
+              "name" : "李打铁",
+              "address" : "",
+              "phone" : "18888882222"
+              },
+              "shipper" : {
+              "name" : "王老吉",
+              "address" : "石桥铺",
+              "phone" : "18888883333"
+              },
+              "isexpress" : "0",
+              "finishtime" : "1970\/01\/01 08:00",
+              "transfertwo" : null,
+              "status" : "0",
+              "exptime" : "1970\/01\/01 08:00",
+              "price" : "0.00",
+              "order" : {
+              "remark" : "",
+              "goodsnum" : "1",
+              "paketype" : "普通",
+              "goods" : "文件",
+              "taketime" : "30",
+              "paytype" : "到付"
+              },
+              "deliverychoice" : "1",
+              "start_area" : "1",
+              "transfertwotime" : "",
+              "transferdriver" : "142",
+              "starttime" : "1970\/01\/01 08:00",
+              "start_areaname" : "石桥铺",
+              "pickuptime" : "1970\/01\/01 08:00",
+              "arrivedtime" : "1970\/01\/01 08:00",
+              "end_area" : "17",
+              "shortno" : "5",
+              "orderno" : "0914101311"
+              },
+              {
+              "start_station" : "149",
+              "addtime" : "2017\/09\/14 10:09",
+              "end_station" : "154",
+              "id" : "340",
+              "transferdrivertime" : "",
+              "courier" : {
+              "id" : "72",
+              "name" : "林猫",
+              "mobile" : "13399999992"
+              },
+              "transferone" : "153",
+              "transferonetime" : "",
+              "start" : {
+              "title" : "中色石桥铺",
+              "mobile" : "13033333333",
+              "sendtime" : "",
+              "address" : "暗点"
+              },
+              "statustypes" : null,
+              "isdeliver" : "0",
+              "end_areaname" : "忠县",
+              "logistics" : "中色货运有限公司",
+              "consignee" : {
+              "name" : "张三",
+              "address" : "",
+              "phone" : "18888886666"
+              },
+              "shipper" : {
+              "name" : "关羽",
+              "address" : "重庆市九龙坡区",
+              "phone" : "18888887777"
+              },
+              "isexpress" : "0",
+              "finishtime" : "1970\/01\/01 08:00",
+              "transfertwo" : null,
+              "status" : "0",
+              "exptime" : "1970\/01\/01 08:00",
+              "price" : "0.00",
+              "order" : {
+              "remark" : "",
+              "goodsnum" : "1",
+              "paketype" : "普通",
+              "goods" : "文件",
+              "taketime" : "30",
+              "paytype" : "到付"
+              },
+              "deliverychoice" : "1",
+              "start_area" : "1",
+              "transfertwotime" : "",
+              "transferdriver" : "142",
+              "starttime" : "1970\/01\/01 08:00",
+              "start_areaname" : "石桥铺",
+              "pickuptime" : "1970\/01\/01 08:00",
+              "arrivedtime" : "1970\/01\/01 08:00",
+              "end_area" : "17",
+              "shortno" : "4",
+              "orderno" : "0914100974"
+              }
+              ],
+    "extends" : {
+        "total" : 3,
+        "ordercount" : 6,
+        "allprice" : 0,
+        "postprice" : 0,
+        "costprice" : 0
+    }
+}
