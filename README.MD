@@ -21,7 +21,7 @@ iOS 8+, iPhone & iPad
 ####  手动导入
 ![手动导入项目需要将该文件夹的所有内容引入项目中](http://upload-images.jianshu.io/upload_images/2484280-35e9a26a68edbdcd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-如图所示，将“CBArchiver”文件夹拖入要用到该框架的工程中，在Swift项目中，可直接对其进行使用。 
+如图所示，将“CBArchiver”文件夹拖入要用到该框架的工程中，在项目中，可直接对其进行使用。 
 
 ![你需要将CBArchiver的文件导入到Target的Build Phase 中 (You should import some file to there)](http://upload-images.jianshu.io/upload_images/2484280-fecbddb0de1f3fa5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
