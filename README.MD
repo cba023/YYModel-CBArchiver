@@ -1,40 +1,41 @@
 ![CBArchiverLogo](http://upload-images.jianshu.io/upload_images/2484280-6a7485126a4b6571.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
-基于YYModel的轻量级高效归档缓存框架CBArchiver
+基于YYModel的轻量级高效归档缓存框架CBArchiver(Lightweight and efficient archiving caching framework based on YYModel)
 
-## 开发环境
+## 开发环境(Development environment)
 
  Mac OS 10.12+ / Xcode 9+ / Objective-C
-## 支持环境
+## 支持环境(Support Development)
 iOS 8+, iPhone & iPad
-## 项目获取
+## 项目获取 (Get)
 此处代码由Objective-C展示，项目已经上传至github中[CBArchiver](https://github.com/cba023/YYModel-CBArchiver)(https://github.com/cba023/YYModel-CBArchiver)
 若要使用，请导入文件到您的项目。
 
-## 功能展示
+## 功能展示(Demonstrate)
 
 ![功能演示](http://upload-images.jianshu.io/upload_images/2484280-9d598797a69d7621.gif?imageMogr2/auto-orient/strip)
 
 
-## 使用说明
-### 导入项目
-####  手动导入
-![手动导入项目需要将该文件夹的所有内容引入项目中](http://upload-images.jianshu.io/upload_images/2484280-35e9a26a68edbdcd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+## 使用说明(Guides)
+### 导入项目(Import)
+####  手动导入(Manual)
+![手动导入项目需要将该文件夹的所有内容引入项目中(import all file to your project)](http://upload-images.jianshu.io/upload_images/2484280-35e9a26a68edbdcd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-如图所示，将“CBArchiver”文件夹拖入要用到该框架的工程中，在项目中，可直接对其进行使用。 
+如图所示，将“CBArchiver”文件夹拖入要用到该框架的工程中，在项目中，可直接对其进行使用。 (As shown in the figure, the "CBArchiver" folder will be dragged into the project to use the framework, in the project, you can directly use it.)
 
 ![你需要将CBArchiver的文件导入到Target的Build Phase 中 (You should import some file to there)](http://upload-images.jianshu.io/upload_images/2484280-fecbddb0de1f3fa5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 #### 函数调用
 
-* 转换字典型数组为model型数组
+* 转换字典型数组为model型数组(Convert a dictionary array to a model array)
 ```
 NSArray * arr = dicJson[@"list"];
 // arr: 字典型数组 ，self.list: 自定义的List类型的数组 
 self.list =  [arr convertToModelClass:[List class]];
 ```
-* 保存数据模型到本地
+* 保存数据模型到本地(Save the data model to the local
+)
 
 ```
 // flag: 存储是否成功
@@ -42,24 +43,24 @@ BOOL flag = [CBArchiver.shared writeObj:self.list withFileName:DataName];
 NSString * msg = flag == YES ? @"Write success" : @"Write fail";
 ```
 
-* 从本地读取之前存入的数据模型
+* 从本地读取之前存入的数据模型(Read from the local data model before being stored)
 
 ```
 NSMutableArray <List *>* arrModel = [CBArchiver.shared readFromFileName:DataName];
 ```
 
-* 从本地删除之前存入的数据模型
+* 从本地删除之前存入的数据模型(Remove the previously stored data model from the local)
 
 ```
 // flag: YES为成功 ,NO表示不存在该归档
 BOOL flag = [CBArchiver.shared deleteFromFileName:DataName];
 NSString * msg = flag == YES ? @" Delete success" : @"Delete fail, maybe file does not exist ";
 ```
-### 实现原理
+### 实现原理(Impelmentation principle)
 
-#### 函数封装
+#### 函数封装(Function wrapper)
 
-* 获取归档文件路径名称
+* 获取归档文件路径名称(Fetch file's path and name)
 ```
 /// Get data's name
 - (NSString *)getPathWithFileName:(NSString *)name {
@@ -69,7 +70,7 @@ NSString * msg = flag == YES ? @" Delete success" : @"Delete fail, maybe file do
 }
 ```
 
-* 转换字典型数组为model型数组
+* 转换字典型数组为model型数组(Convert a dictionary array to a model array)
 ```
 - (NSMutableArray *)convertToModelClass:(Class)aClass {
     NSMutableArray * list = [NSMutableArray array];
@@ -80,7 +81,7 @@ NSString * msg = flag == YES ? @" Delete success" : @"Delete fail, maybe file do
     return list;
 }
 ```
-* 保存数据模型到本地
+* 保存数据模型到本地(Read from the local data model before being stored)
 
 ```
 // Write data to file
@@ -91,7 +92,8 @@ NSString * msg = flag == YES ? @" Delete success" : @"Delete fail, maybe file do
 }
 ```
 
-* 从本地读取之前存入的数据模型
+* 从本地读取之前存入的数据模型(Save the data model to the local
+)
 
 ```
 // Read data from file
@@ -101,7 +103,7 @@ NSString * msg = flag == YES ? @" Delete success" : @"Delete fail, maybe file do
 }
 ```
 
-* 从本地删除之前存入的数据模型
+* 从本地删除之前存入的数据模型(Remove the previously stored data model from the local)
 
 ```
 // Delete file by input name
@@ -127,7 +129,7 @@ NSString * msg = flag == YES ? @" Delete success" : @"Delete fail, maybe file do
 亲， 看上上面的介绍是不是觉得归档操作简单多了呀？是的，通过封装我们可以在非常简洁的情况下调用归档实现快速的文件本地化，可以为你的页面做缓存，或者存储其他的轻量的数据，没有读懂？请原谅我写得不太优美，欢迎去github下载https://github.com/cba023/YYModel-CBArchiver。
 亲，学会了吧？赶快去嗨皮吧！
 
-## 致读者
+## 致读者 (To reader)
 该项目已经上传至github中[YYModel-CBArchiver](https://github.com/cba023/YYModel-CBArchiver)(https://github.com/cba023/YYModel-CBArchiver)
 ，可以在那里直接star 或者fork 该项目，它可能会长期的帮助您高效地进行程序开发，当然也欢迎留言，有不足或者错误的地方可以随时指正，您的指导和建议是我前行路上新的动力！
 
