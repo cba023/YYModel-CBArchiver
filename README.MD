@@ -9,7 +9,8 @@
 ## 支持环境
 iOS 8+, iPhone & iPad
 ## 项目获取
-此处代码由Objective-C展示，项目已经上传至github中[CBArchiver](https://github.com/cba023/YYModel-CBArchiver)(https://github.com/cba023/YYModel-CBArchiver)，若要使用，请导入文件到您的项目。
+此处代码由Objective-C展示，项目已经上传至github中[CBArchiver](https://github.com/cba023/YYModel-CBArchiver)(https://github.com/cba023/YYModel-CBArchiver)
+若要使用，请导入文件到您的项目。
 
 ## 功能展示
 
